@@ -1,0 +1,1013 @@
+<html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>#BioAssistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.container {
+    position: relative;
+    width: 25%;
+    float: left;
+    display: grid;
+    min-width: 330px;
+    vertical-align: middle;   
+
+
+}
+
+.container img {
+    vertical-align: middle;
+    float: center;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 33.33%;
+        min-width: 330px;
+        display: grid;
+        vertical-align: middle;
+        float: center;   
+      }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 50%;
+        min-width: 330px;
+        display: grid;
+        vertical-align: middle;
+        float: center;   
+      }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        min-width: 330px;
+        display: grid;
+        max-width: 100%;
+        min-width: 330px;
+
+    }
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    background-color:#2d3032;
+    text-align: center;
+    color:#178C8C;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container1 {
+        width: 100%;
+        min-width: 330px;
+        float: center;
+        font-size: 32.5px;
+    }
+}
+
+.container5 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    background-color: #FFEDC2; 
+    color: #222;
+    text-align: center;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container5 {
+        width: 100%;
+        min-width: 330px;
+        float: center;
+        font-size: 32.5px;
+    }
+}
+
+.container6 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    background-color: #333333; 
+    color: #eee;
+    text-align: center;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container6 {
+        width: 100%;
+        min-width: 330px;
+        float: center;
+        font-size: 32.5px;
+    }
+}
+
+.container2 {
+
+   position: relative;
+    width: 50%;
+    float: left;
+    display: grid;'
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 45px;
+    min-width: 330px;
+    background-size: cover;
+
+}
+
+
+.container7 {
+  text-align: center;
+  background-color: #330C2F;
+  color:    #A9A9A9;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container2 {
+        width: 100%;
+        min-width: 330px;
+        float: center;
+    }
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    z-index: -1;
+    text-align: center;
+    position: relative;
+    
+    left: 0%;
+    float: top;
+
+    
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #330C2F;
+  opacity: 0;
+  transition: .5s ease;
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    padding: 16px 32px;
+    color: white;
+    font-size: 15px;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    position: absolute;
+    top: 62%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.bottom-left {
+    font-size: 18px;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    max-height: 36px;
+    max-width: 100%
+    color: black;
+    text-align: center;
+
+}
+
+
+.img1h {
+    position: relative;
+} 
+
+.textc
+{
+    text-align: center;
+    
+
+}
+
+.textd
+{
+    text-align: left;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 35px;
+    color:#2d3032;
+    margin-left: 44%;
+
+}
+
+
+.abc {
+    line-height: 30%;
+}
+.abc1 {
+    line-height: 130%;
+    color:#178C8C;
+    font-size: 30px;
+    margin-left: 42.5%;
+
+
+}
+
+.abc2 {
+    line-height: 115%;
+    color:#178C8C;
+    font-size: 30px;
+    margin-left: 45%;
+}
+
+.abc3 {
+    line-height: 20%;
+}
+
+.topnav {
+  overflow: hidden;
+  float: right;
+  border-right:1px solid #bbb;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 24px;
+  border-radius: 20px 20px 0px 0px;
+  display: block;
+}
+
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 23px 23px;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 20px 20px 0px 0px;
+
+
+}
+
+.topnav a:hover {
+  background-color: #111!important;
+  color:white;
+
+}
+
+.active {
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+  font-size: 32.3px;
+
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    border-radius: 0px 0px 0px 0px;
+
+  }
+}
+
+.border { border-width: 15px; border-color: white; border-style: solid; }
+
+.para1 {
+  text-align: center;
+  background-color: #330C2F;
+  color:    #A9A9A9;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 31px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .para1 {
+  text-align: center;
+  background-color: #330C2F;
+  color:    #A9A9A9;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 22px;
+    }
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+
+.contain4 {
+  position: relative;
+}
+
+.mySlides {
+  display: flex;
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: #330C2F;
+  background-color: #C0C0C0;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 13%;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+.next {
+  right: 0;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: #330C2F;
+  color: #A9A9A9;
+}
+
+.numbertext {
+  color: #000;
+  font-size: 15px;
+  padding: 3px 8px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-contain4 {
+  text-align: center;
+  background-color: #333333;
+  padding: 0.25px 16px;
+  color: eee;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+.columnmax {
+  float: left;
+  vertical-align: middle;
+  overflow-x: scroll;
+  max-width: 100%;
+  max-height: 25%;
+  display: flex;
+  -ms-overflow-style: none;
+
+}
+
+.columnmax::-webkit-scrollbar {
+  display: none;
+
+}
+
+.columnmax::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  min-width: 20%;
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.prnim {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left:5%;
+  float: center;
+}
+
+.modal {
+    position: relative; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: #330C2F; 
+    opacity: 1;
+}
+
+.modal-content {
+    position:absolute;
+    border-radius: 20%;
+    margin: auto;
+    padding: 2.5%;
+    border: 2%;
+    width: 15%;
+    height: 20%;
+    top: 30%;
+    left: 40%;
+    text-align: left;
+    float: center;
+    vertical-align: middle;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 30px;
+  background-color: #FFBB00;
+  color: white;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1600px) {
+    .modal-content {
+ border-radius: 20%;
+    margin: auto;
+    padding: 2.5%;
+    border: 2%;
+    width: 30%;
+    height: 24%;
+    top: 30%;
+    left: 35%;
+    text-align: left;
+    float: center;
+    vertical-align: middle;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .modal-content {
+ border-radius: 20%;
+    margin: auto;
+    padding: 2.5%;
+    border: 2%;
+    width: 40%;
+    height: 25%;
+    top: 30%;
+    left: 30%;
+    text-align: left;
+    float: center;
+    vertical-align: middle;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .modal-content {
+ border-radius: 20%;
+    margin: auto;
+    padding: 2.5%;
+    border: 2%;
+    width: 50%;
+    height: 20%;
+    top: 30%;
+    left: 25%;
+    text-align: left;
+    float: center;
+    vertical-align: middle;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 22px;
+    }
+}
+
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <a href="iteration1.html" >
+            
+  <img src = "logonu2.png" width ="210px" height="80px" align="left" background-color="#800000" alt="BioAssistant" class="border">
+ <br>
+ <br>
+ 
+  </a>
+
+<div class="topnav" id="myTopnav">
+  <a href="#A1" class="active" style="background-color:#800000" ><div class="xyz" id="B1" onclick="myFunction()">Home</div></a>
+  <a href="#A2" id="A12" style="background-color:#4B0082" data-toggle="topnav" data-target=".topnav" ><div class="xyz" id="B1" onclick="myFunction()"> Vision</div></a>
+  <a href="#A3" style="background-color:#FF4500"><div class="xyz" id="B1" onclick="myFunction()">Product Demo</div></a>
+  <a style="background-color:#006400" href="#A4"><div class="xyz" id="B1" onclick="myFunction()">Pitch</div></a>
+  <a href="#A5" style="background-color:#2F4F4F" id="contactbtn"><div class="xyz" id="B1" onclick="myFunction()">Contact</div></a>
+
+
+  <a href="javascript:void(0);" style="background-color:#4B0082" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" id="A10"  style=" color:#A9A9A9;"></i>
+  </a>
+</div>
+
+</ul>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+    <p> Contact: <a href="mailto:muralig1993pro@gmail.com" style="font-size: 20px"><br><br>  muralig1993pro@gmail.com</a> <a href="" style="font-size: 20px; text-decoration:none"><br> +1 720-278-9112</a> <a href="https://linkedin.com/in/muralig1993/" style="font-size: 20px"> <br> <img src="linkedinicon.png" alt="" width="22.5%" title="We are making the most efficient cardiac monitor"> </a></p>
+    
+    
+  </div>
+
+</div>
+
+<div class="para1" text-align="center" style="float: center" id="A1">
+  We are aiming to solve chronic health disorders and healthcare crisis across the globle 
+<br>
+  Since we believe that health is the biggest wealth of any economy
+</div>
+
+
+
+
+<div class="container">
+  
+  <img src="Coverin.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="Coverin1.png" alt="" width="100%" height="100%" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+<div class="container">
+  
+  <img src="BSL.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="BSL1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+
+<div class="container">
+  
+  <img src="BP.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="BP1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+<div class="container">
+  
+  <img src="MFD.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="MFD1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+<div class="container">
+  
+  <img src="Be.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="Be1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+<div class="container">
+  
+  <img src="CardiacMn.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="CardiacMn1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+<div class="container">
+  
+  <img src="Strss.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="Strss1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+
+</div>
+
+
+
+<div class="container">
+  
+  <img src="GWim.png" alt="" class="image" title="We are making the most efficient cardiac monitor" >  
+  
+  <div class="overlay">
+    <img src="GWim1.png" alt="" width="100%" height="auto" class="img1h" style="vertical-align:middle" title="We are making the most efficient cardiac monitor">
+  </div>
+</div>
+
+<div class="container1" id="A2">
+
+WHAT INSPIRES US
+
+</div>
+
+
+
+<p> <img src="vsn.png" alt="" width="41%" height="auto" align="left"> <div class="textd"> The major vision of the "Bio-Assistant" is to reduce the health-care expenditure of consumers and hospitals through the application of novel telemetry hardware and AI technology </div>
+</p>
+
+  <ol>
+    <div class="abc1">
+  The primary focus of the Bio-Assistant lies in the technological innovations in the following areas: </div>
+  <div class="abc3"></div> 
+  <div class="abc"> <div class="abc2"> 1. Automated multifunctional medical device with smaller assessment cycle to reduce medical practitioner's efforts and time expenditure on redundant manual tasks</div>
+  <br>  <div class="abc2">2. Non-invasive wearable clinical monitors for tracking "continuous blood pressure, blood glucose level and other vital information" with an automated wellness management and therapy recommendation system</div>
+  <br>  <div class="abc2">3. An economical daily health management wearable device with interactive and attractive low powered design </div>
+  <br>  <div class="abc2"> 4. Health Disorder prevention and coherence prediction database </div>
+</div>
+</ol>
+
+<div class="container5" style="background-color: #FFA900 color: #100060" id="A3">
+
+EARLY-STAGE VALUE PROPOSITION <br>(PROTOTYPE ACCOMPLISHED)
+
+</div>
+
+<div class="container2">
+
+<img src="prb.png" alt="What is the big problem" width="100%" height="auto" align="left">
+
+</div>
+
+<div class="container2">
+
+<img src="sol.png" alt="BioAssist vital Solution" width="100%" height="auto" align="left">
+
+</div>
+
+<div class="container6" style="" id="A4">
+
+PITCH
+
+</div>
+
+
+
+
+<div class="contain4">
+  <div class="mySlides">
+    <div class="numbertext">1 / 15</div>
+    <img src="Slide1.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 15</div>
+    <img src="Slide2.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 15</div>
+    <img src="Slide3.PNG" style="width:90%" class="prnim">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 15</div>
+    <img src="Slide4.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 15</div>
+    <img src="Slide5.PNG" style="width:90%" class="prnim">
+  </div>
+    
+  <div class="mySlides" >
+    <div class="numbertext">6 / 15</div>
+    <img src="Slide6.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 15</div>
+    <img src="Slide7.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 15</div>
+    <img src="Slide8.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 15</div>
+    <img src="Slide9.PNG" style="width:90%" class="prnim">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 15</div>
+    <img src="Slide10.PNG" style="width:90% " class="prnim">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">11 / 15</div>
+    <img src="Slide11.PNG" style="width:90%" class="prnim">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">12 / 15</div>
+    <img src="Slide12.PNG" style="width:90%" class="prnim">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">13 / 15</div>
+    <img src="Slide13.PNG" style="width:90%" class="prnim">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">14 / 15</div>
+    <img src="Slide14.PNG" style="width:90%" class="prnim">
+  </div>
+
+   <div class="mySlides">
+    <div class="numbertext">15 / 15</div>
+    <img src="Slide15.PNG" style="width:90%" class="prnim">
+  </div>
+    
+
+  <a class="prev" style="font-size: 35px"  onclick="plusSlides(-1)">&#8249;</a>
+  <a class="next" style="font-size: 35px" onclick="plusSlides(1)">&#8250;</a>
+
+  <div class="caption-contain4">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="columnmax">
+    <div class="column">
+      <img class="demo cursor" src="Slide1.PNG" style="width:100%" onclick="currentSlide(1)" alt="1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide2.PNG" style="width:100%" onclick="currentSlide(2)" alt="2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide3.PNG" style="width:100%" onclick="currentSlide(3)" alt="3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide4.PNG" style="width:100%" onclick="currentSlide(4)" alt="4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide5.PNG" style="width:100%" onclick="currentSlide(5)" alt="5">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Slide6.PNG" style="width:100%" onclick="currentSlide(6)" alt="6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide7.PNG" style="width:100%" onclick="currentSlide(7)" alt="7">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="Slide8.PNG" style="width:100%" onclick="currentSlide(8)" alt="8">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="Slide9.PNG" style="width:100%" onclick="currentSlide(9)" alt="9">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="Slide10.PNG" style="width:100%" onclick="currentSlide(10)" alt="10">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="Slide11.PNG" style="width:100%" onclick="currentSlide(11)" alt="11">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="Slide12.PNG" style="width:100%" onclick="currentSlide(12)" alt="12">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="Slide13.PNG" style="width:100%" onclick="currentSlide(13)" alt="13">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="Slide14.PNG" style="width:100%" onclick="currentSlide(14)" alt="14">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Slide15.PNG" style="width:100%" onclick="currentSlide(15)" alt="15">
+    </div>
+</div>
+  </div>
+</div>
+
+<div class="container7">
+&copy copright 2017 BioAssistant Ltd.
+</div>
+
+
+
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+
+
+window.addEventListener('click', function(event){
+
+
+  if(event.target == xyz){
+  var y = document.getElementById("myTopnav");
+  
+    y.className = 'topnav';
+    y.className += "responsive";
+  }
+}
+)
+
+
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("contactbtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+
